@@ -8,7 +8,7 @@
 * Locally exploitable: Yes (Client-Side)
 
 # Vulnerability Description
-LiquidFiles [1] is a Virtual Appliance that helps Companies and Organizations Send, Receive & Share Large Files, Fast & Securely.
+LiquidFiles [^1] is a Virtual Appliance that helps Companies and Organizations Send, Receive & Share Large Files, Fast & Securely.
 
 Vulnerabilities were found in LiquidFiles V.A. which exploit the way it renders user content. Targeting a logged-in user would allow malicious users to perform client-side attacks. The impact of this ranges from executing commands as root on the server to retrieving sensitive information about encrypted e-mails, depending on the permissions of the user targeted. It should be noted that client-side interaction is mandatory for these attacks to succeed (e.g. accessing an attacker-controlled website).
 
@@ -28,7 +28,7 @@ This vulnerability was discovered and researched by Leandro Barragan.
 
 For example, the following URL returns all the sent e-mails: `https://server/messages/sent?format=js`
 
-```Javascript
+```js
 $("#messages").html('<thead>\n  <tr>\n    <th>ID<\/th>\n    <th><a href=\"/messages/sent?direction=asc&amp;sort=recipients\">Recipients<\/a><\/th>\n    <th><a href=\"/messages/sent?direction=asc&amp;sort=subject\">Subject<\/a><\/th>\n    <th>Filename<\/th>\n    <th><a href=\"/messages/sent?direction=asc&amp;sort=size\">Size<\/a><\/th>\n    <th><a class=\"current desc\" href=\"/messages/sent?direction=asc&amp;sort=messages.created_at\">Sent<\/a><\/th>\n    <th><a href=\"/messages/sent?direction=asc&amp;sort=messages.expires_at\">Expires<\/a><\/th>\n    <th class=\"center\"><a href=\"/messages/sent?direction=asc&amp;sort=downloads\">Downloads<\/a><\/th>\n    <th>Action<\/th>\n  <\/tr>\n<\/thead>\n<tbody>\n  <tr>\n  <td class=\"id-column\">fFAfVtDezDDAbhEjhlXGuE<\/td>\n  <td class=\"recipients_column\">xxxxx@gmail.com<\/td>\n  <td class=\"subject_column\">Test<\/td>\n  <td class=\"download_column wrap\"><\/td>\n  <td class=\"nowrap\">0 Bytes<\/td>\n\n  <td class=\"expires_column nowrap\">12 Dec, 2019 18:14<\/td>\n  <td class=\"expires_column nowrap\">11 Jan, 2020<\/td>\n  <td class=\"downloads_column center\">\n      0\n  <\/td>\n  <td class=\"actions_column nowrap\">\n    <ul class=\"nav nav-pills\">\n      <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"><b class=\"caret\"><\/b><\/a>\n        <ul class=\"dropdown-menu dropdown-menu-right\">\n          <li><a data-toggle=\"modal\" data-target=\"#message_modal\" data-cache=\"false\" href=\"/message/fFAfVtDezDDAbhEjhlXGuE/popup\">View Message (Popup)<\/a><\/li>\n          <li><a href=\"/message/fFAfVtDezDDAbhEjhlXGuE\">View Message<\/a><\/li> [...SNIPPED...]
 ```
 
@@ -99,5 +99,6 @@ Another method exists to achieve code execution. The "Access Control" setting on
 * 2020-08-05: Requested CVE numbers to MITRE
 
 # References
-* https://www.liquidfiles.com/
-* https://man.liquidfiles.com/release_notes/version_3-3-x.html
+
+[^1]: https://www.liquidfiles.com/
+[^2]: https://man.liquidfiles.com/release_notes/version_3-3-x.html
