@@ -24,7 +24,7 @@ This vulnerability was discovered and researched by Leandro Barragan.
 # Technical Description / Proof of Concept Code
 
 ## E-mail content leakage via Server-Generated Javascript Responses
-[CVE-2019-XXXX] Several endpoints were found to be using a pattern called "Server-Generated Javascript Responses". This pattern, commonly used on Rails applications, allows the application to bypass cross-origin protections by returning data in form of Javascript code, in a similar fashion to the more prevalent JSONP technique.
+[CVE-2020-29071] Several endpoints were found to be using a pattern called "Server-Generated Javascript Responses". This pattern, commonly used on Rails applications, allows the application to bypass cross-origin protections by returning data in form of Javascript code, in a similar fashion to the more prevalent JSONP technique.
 
 For example, the following URL returns all the sent e-mails: `https://server/messages/sent?format=js`
 
@@ -49,7 +49,7 @@ After obtaining the IDs of the sent messages, its contents can also be disclosed
 This issue is not limited to the previously mentioned endpoints, approximately 109 ERB views were found to be vulnerable to this issue.
 
 ## Cross-Site Scripting via Rendering of Uploaded Files
-[CVE-2019-XXXX] A Cross-Site Scripting issue was found which can be exploited by uploading HTML files using the "Shares" feature.
+[CVE-2020-29072] A Cross-Site Scripting issue was found which can be exploited by uploading HTML files using the "Shares" feature.
 
 When viewing uploaded files using the UI, documents are embedded using iframes with the "sandbox" attribute set. This prevents any malicious Javascript code from being executed. However, accessing the file directly using the generated URL would render the file inline in the context of the web application's origin:
 
