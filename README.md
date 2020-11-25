@@ -10,7 +10,7 @@ Hi! I'm a Security Consultant from Argentina. You can reach me via Twitter at [@
 
 | CVE-ID        | Write-up/Advisory                |
 |-------------|------------------------|
-| `CVE-PENDING`   | [LiquidFiles Virtual Appliance Multiple Vulnerabilities](https://lean0x2f.github.io/liquidfiles_advisory)  |
+| `CVE-2020-29071, CVE-2020-29072` | [LiquidFiles Virtual Appliance Multiple Vulnerabilities](https://lean0x2f.github.io/liquidfiles_advisory)  |
 | `CVE-2018-6288, CVE-2018-6289, CVE-2018-6290, CVE-2018-6291` | [Kaspersky Secure Mail Gateway Multiple Vulnerabilities](https://www.coresecurity.com/core-labs/advisories/kaspersky-secure-mail-gateway-multiple-vulnerabilities)  |
 | `CVE-2018-11138, CVE-2018-11139, CVE-2018-11135, CVE-2018-11134, (...)` | [Quest KACE System Management Appliance Multiple Vulnerabilities](https://www.coresecurity.com/core-labs/advisories/quest-kace-system-management-appliance-multiple-vulnerabilities) |
 | `CVE-2018-6219, CVE-2018-6220, CVE-2018-6221, CVE-2018-6222, (...)` | [Trend Micro Email Encryption Gateway Multiple Vulnerabilities](https://www.coresecurity.com/core-labs/advisories/trend-micro-email-encryption-gateway-multiple-vulnerabilities) |
