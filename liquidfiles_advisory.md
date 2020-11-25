@@ -3,7 +3,7 @@
 * Release mode: Coordinated disclosure
 * Date published: 2020-08-05
 * Class: CWE-79
-* CVE IDs: Not yet issued
+* CVE IDs: CVE-2020-29071, CVE-2020-29072
 * Remotely exploitable: Yes (Client-Side)
 * Locally exploitable: Yes (Client-Side)
 
@@ -97,6 +97,7 @@ Another method exists to achieve code execution. The "Access Control" setting on
 * 2019-12-24: A fix was issued by the vendor and confirmed by the reporter
 * 2020-08-05: Published advisory
 * 2020-11-23: Requested CVE numbers to MITRE
+* 2020-11-24: MITRE assigned CVE-2020-29071, CVE-2020-29072
 
 # References
 
