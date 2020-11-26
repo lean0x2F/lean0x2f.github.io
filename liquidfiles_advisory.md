@@ -49,7 +49,7 @@ After obtaining the IDs of the sent messages, its contents can also be disclosed
 This issue is not limited to the previously mentioned endpoints, approximately 109 ERB views were found to be vulnerable to this issue.
 
 ## Cross-Site Scripting via Rendering of Uploaded Files
-[[CVE-2020-29071]](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-29072) A Cross-Site Scripting issue was found which can be exploited by uploading HTML files using the "Shares" feature.
+[[CVE-2020-29071]](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-29071) A Cross-Site Scripting issue was found which can be exploited by uploading HTML files using the "Shares" feature.
 
 When viewing uploaded files using the UI, documents are embedded using iframes with the "sandbox" attribute set. This prevents any malicious Javascript code from being executed. However, accessing the file directly using the generated URL would render the file inline in the context of the web application's origin:
 
